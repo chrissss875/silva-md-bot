@@ -20,12 +20,12 @@ module.exports = {
     MODE:                  process.env.MODE || "both",
     AUTO_STATUS_SEEN:      toBool(process.env.AUTO_STATUS_SEEN,      true),
     AUTO_STATUS_REACT:     toBool(process.env.AUTO_STATUS_REACT,     false),
-    AUTO_STATUS_REPLY:     toBool(process.env.AUTO_STATUS_REPLY,     true),
-    AUTO_STATUS_MSG:       process.env.AUTO_STATUS_MSG || "Seen by Silva MD",
-    CUSTOM_REACT_EMOJIS:   process.env.CUSTOM_REACT_EMOJIS || " ",
+    AUTO_STATUS_REPLY:     toBool(process.env.AUTO_STATUS_REPLY,     false),
+    AUTO_STATUS_MSG:       process.env.AUTO_STATUS_MSG ||
+    CUSTOM_REACT_EMOJIS:   process.env.CUSTOM_REACT_EMOJIS || 
     Status_Saver:          process.env.Status_Saver  || process.env.STATUS_SAVER  || 'false',
     STATUS_REPLY:          process.env.STATUS_REPLY  || 'false',
-    STATUS_MSG:            process.env.STATUS_MSG    || 'Muffler SUCCESSFULLY VIEWED YOUR STATUS',
+    STATUS_MSG:            process.env.STATUS_MSG    ,
     READ_MESSAGE:          toBool(process.env.READ_MESSAGE,          false),
     AUTO_REACT_NEWSLETTER:   toBool(process.env.AUTO_REACT_NEWSLETTER,   true),
     ANTI_BAD:              toBool(process.env.ANTI_BAD,              false),
