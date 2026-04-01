@@ -18,7 +18,7 @@ module.exports = {
     ALIVE_IMG:             process.env.ALIVE_IMG || "https://files.catbox.moe/5uli5p.jpeg",
     LIVE_MSG:              process.env.LIVE_MSG || "Silva MD is active",
     MODE:                  process.env.MODE || "both",
-    AUTO_STATUS_SEEN:      toBool(process.env.AUTO_STATUS_SEEN,      true),
+    AUTO_STATUS_SEEN:      toBool(process.env.AUTO_STATUS_SEEN,      false),
     AUTO_STATUS_REACT:     toBool(process.env.AUTO_STATUS_REACT,     false),
     AUTO_STATUS_REPLY:     toBool(process.env.AUTO_STATUS_REPLY,     false),
     AUTO_STATUS_MSG:       process.env.AUTO_STATUS_MSG ||
@@ -29,7 +29,7 @@ module.exports = {
     READ_MESSAGE:          toBool(process.env.READ_MESSAGE,          false),
     AUTO_REACT_NEWSLETTER:   toBool(process.env.AUTO_REACT_NEWSLETTER,   true),
     ANTI_BAD:              toBool(process.env.ANTI_BAD,              false),
-    ALWAYS_ONLINE:         toBool(process.env.ALWAYS_ONLINE,         true),
+    ALWAYS_ONLINE:         toBool(process.env.ALWAYS_ONLINE,         false),
     AUTO_TYPING:           toBool(process.env.AUTO_TYPING,           true),
     AUTO_RECORDING:        toBool(process.env.AUTO_RECORDING,        false),
     DELETE_LINKS:          toBool(process.env.DELETE_LINKS,          false),
